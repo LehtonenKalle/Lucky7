@@ -47,6 +47,18 @@ public class LuckySeven {
 				System.out.println("You have " + euros + " euros left.\n");
 			} 
 	
+			
+			
+			System.out.println("If you want to keep playing: press enter.");
+			System.out.println("If you want to quit: type \"e\" and press enter.");
+			
+			String userInput = input.nextLine();
+			
+			if (userInput.equals("e")) {
+				System.out.println("Thank you for playing!");
+				break;
+			} 
+			
 		} while (euros > 0);
 		
 		System.out.println("Game over!");
